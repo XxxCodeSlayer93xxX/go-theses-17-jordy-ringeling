@@ -24,7 +24,6 @@ body {
 ::-moz-selection {
   background: #03ff00; 
 }
-
 ::-webkit-scrollbar {
     width: 11px;
 }
