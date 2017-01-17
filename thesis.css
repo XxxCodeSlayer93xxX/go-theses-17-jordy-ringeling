@@ -1,0 +1,772 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html, body { height: 100% }
+
+body {
+  background-color: #e4e4e4;
+  color: white;
+}
+
+/*.counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    z-index: 10000;
+    height: 30942px;
+    background-color: black;  
+    line-height: 40px;
+}*/
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    background-color: white;  
+    text-align: center;
+    line-height: 40px;
+    z-index: -100;
+}
+
+.background.chapter0 {
+    background: black;
+}
+.background.chapter1 {
+    background: red;
+}
+.background.chapter2 {
+    background: #ffcc28;
+}
+.background.chapter3 {
+    background: blue;
+}
+.background.chapter4 {
+    background: #06ff01;
+}
+.background.chapter5 {
+    background: #c200ff;
+}
+
+
+
+/*SCROLLBAR & SELECTION*/
+
+/*#chapter0::selection {
+  background: #f9d500;
+}*/
+
+::selection {
+  background: #ffdf57; 
+}
+::-moz-selection {
+  background: #ffdf57; 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 100px rgba(194,0,255,1); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 100px rgba(255,255,255,1);
+}
+
+  
+/*TYPOGRAPHY*/
+
+h1 {
+  /*PAGE TITLE*/
+  font-weight: normal;
+  letter-spacing: 0.003em;
+  font-size: 70px;
+  margin-left: 1%;
+  text-align: left;
+}
+
+h2 {
+  /*SHIFT ON RIGHT SIDE OF PAGE*/
+  font-weight: normal;
+  color: white;
+  margin-left: 20px; 
+  margin-right: 7px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+h4 {
+  /*SUBTITLE*/
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  color: black;
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+p {
+  /*BODY TEXT*/
+  font-weight: 100;
+  font-size: 21px;
+  color: white;  
+  text-align: left;
+  line-height: 1.4em;
+}
+
+sup {
+  line-height: 7px;
+}
+
+#p2 {
+  text-indent: 30px;
+}
+
+p span { 
+    padding: 3px;
+}
+
+
+
+#menutop-web { 
+  position: fixed;
+  top: 0%;
+  text-align: center;
+  width: 100%;
+  background-color: blue;
+  z-index: 1000;
+}
+
+#menuelement > li { 
+  color: white;
+  background-color:  blue;
+  letter-spacing: -0.002em;  
+  font-size: 120%;  
+  font-style: 100;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+/*IMAGES*/
+
+img {
+    max-width: 260px;
+    max-height: 100%;
+    margin-bottom: 15px;   
+
+}
+
+.images {
+    font-size: 0.7em;
+    width: 26%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: -100%;
+}
+
+#caption {
+    padding: 3px;
+    margin-top:-18px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: red;
+    background-color: white;
+    line-height: 1.3em;
+    font-size: 1.5em;
+    width: 254px;
+}
+
+a.class1:link{
+  text-decoration: none;
+  color: white;
+}
+
+a.class1:visited{
+  text-decoration: none;
+  color: white;
+}
+
+a.class1:hover{
+  color: white;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;  
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #ff17cf;
+}
+
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+}
+
+
+/*CONTENT*/
+
+#chapter0 p span {  /*ABSTRACT*/
+  background-color: white;
+  color: black;
+  font-size: 1.0em;
+}
+
+#title0 { 
+  color: black;
+  background-color: white;
+  padding: 10px;
+  padding-top: 23px;
+  padding-bottom: 15px;  
+  margin-left: 2%;
+  line-height: 4.7em;
+  z-index: 10;
+}
+
+#art-0 {
+/*  background-image: url("img/background0.jpg");*/
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+
+
+#chapter1 p span { 
+  background-color: white;
+  color: black;
+}
+
+#title1 { /*INTRODUCTION*/
+  color: black;
+  background-color: white;
+  padding-left: 10px;    
+  padding-top: 23px;
+  padding-bottom: 20px;  
+  margin-left: 2%;
+
+}
+
+#art-1 {
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+
+
+#chapter2 p span { 
+  background-color: white;
+  color: black;
+}
+
+#title2 { /*CHAPTER ONE*/
+  color: black;
+  background-color: white;
+  padding-left: 10px;    
+  padding-top: 23px;
+  padding-bottom: 20px; 
+  margin-left: 2%;
+}
+
+#art-2 {
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+
+#chapter3 p span { 
+  background-color: white;
+  color: black;
+}
+
+#title3 { /*THE 2ND ACT*/
+  color: black;
+  background-color: white;
+  padding-left: 10px;    
+  padding-top: 23px;
+  padding-bottom: 20px; 
+  margin-left: 2%;
+}
+
+#art-3 {
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+
+#chapter4 p span {  
+  background-color: white;
+  color: black;
+}
+
+#title4 { /*PHASE III*/
+  color: black;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 23px;
+  padding-bottom: 10px; 
+  margin-left: 2%;
+}
+
+#art-4 {
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+
+#chapter5 p span { 
+  background-color: white;
+  color: black;
+}
+
+#title5 { /*FINALE*/
+  color: black;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 23px;
+  padding-bottom: 20px; 
+  margin-left: 2%;
+  line-height: 4.7em;
+}
+
+
+
+#art-5 {
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+
+
+#shift {
+  text-transform: uppercase;
+  background-color: #c200ff;
+  position: fixed;
+  display: inline-block;
+  overflow:hidden;
+  right: -1%;
+  bottom: 0;
+  line-height: 80px;
+  font-size: 213%;
+  transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+  width: 100vh;
+  height: 9%;
+  -webkit-transform: rotate(90deg) translateY(80px);
+  -moz-transform: rotate(90deg) translateY(80px);
+  -o-transform: rotate(90deg) translateY(80px);
+  -ms-transform: rotate(90deg) translateY(80px);
+  transform: rotate(90deg) translateY(80px);
+  z-index: 1001;
+}
+
+#shift:after {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+}
+
+/* REFERENCE NUMBERS IN TEXT*/
+.refnote {
+    color: red;
+    font-size: 85%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.4em;
+}
+
+.refnote:hover {
+    color: white;
+    text-decoration: none;
+
+}
+
+/*REFERENCES DIV*/
+.textnotes-web {
+    width: 15%;
+    float: right;
+    margin-right: 6.4%;
+    z-index: -2;
+    margin-top: 38px;
+}
+
+.textnotes-mob {
+    display: none;
+}
+
+/*REFERENCE TEXT IN DIV(URL ECT.)*/
+.textnotes-web p {
+    color: #0018ff;
+    background-color: white;
+    padding: 5px;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.5em;
+    margin-top: 1.3em;
+    margin-left: 1em;
+    margin-right: 0.8em;
+}
+
+.textnotes-mob p {
+    color: #0018ff;
+    background-color: white;
+    padding: 5px;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.5em;
+    margin-top: 1.3em;
+    margin-left: 1em;
+    margin-right: 0.8em;
+}
+
+.textnotes-web a {
+    color: black;
+}
+
+.textnotes-mob a {
+    color: black;
+}
+
+.textnotes-web a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.textnotes-mob a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*NOTE NUMBER ON SIDE*/
+.notenumber {
+    font-size: 1.1em;
+    text-decoration: none;
+    background: none;
+}
+
+.notenumber a:hover {
+   color: #03ff00;
+   background-color: #ff17cf;
+}
+
+
+.floating-box {
+  display: inline;
+  float: left;
+  position: relative;
+  width: 45%;
+  margin-left: 30.5%;
+}
+
+article {
+  page-break-before: always;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+
+/*@media*/
+
+@media screen and (min-width: 480px) {
+  nav {
+      width: 200px;
+      float: left;     /* This makes it float to the left of the main content */
+      margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+   
+.floating-box {
+  top: 5%;
+  width: 90%;
+  margin-left: 1%;
+  margin-right: 3%;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  display: block;
+}
+
+h2 {
+  font-size: 18px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+p {
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#shift {  
+  right: -14%;
+  height: 7%;
+  line-height: 46px;
+  z-index: 10000;
+}
+
+
+#menutop-web { /*CHAPTER*/
+  display: none;
+  position: fixed;
+  font-size:0.09em;
+  top: 0%;
+}
+
+#menutop-mob { /*CHAPTER*/
+  position: fixed;
+  font-size: 0.8em;
+  background-color: blue;
+  width: 100%;
+  top: 0%;
+    z-index: 9999;
+}
+
+
+#menuelement-mob {
+  float:left;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  text-align: left;
+  background-color: blue;
+  word-wrap: break-word;
+  width: 90%;
+  position: relative;
+  display: inline-block;
+
+}
+
+/*.textnotes {
+    width: 15%;
+    float: right;
+    margin-right: 6.4%;
+    z-index: -2;
+    margin-top: 38px;
+
+}
+*/
+
+.textnotes-web {
+    display: none;  
+}
+
+.textnotes-mob {
+    display: block;
+    background-color: white;
+    border: none;
+    font-size: 0.8em;
+    line-height: 1.2em; 
+    width: 89%;
+    margin-left: 5%;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    position: relative;
+    word-wrap: break-word;
+    z-index: 10;    
+}
+
+
+/*REFERENCE TEXT IN DIV(URL ECT.)*/
+.textnotes p {
+    color: #0018ff;
+    background-color: white;
+    padding: 5px;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.5em;
+    margin-top: 1.3em;
+    margin-left: 1em;
+    margin-right: 0.8em;
+}
+
+.textnotes a {
+    color: black;
+}
+
+.textnotes a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*NOTE NUMBER ON SIDE*/
+.notenumber {
+    font-size: 1.1em;
+    text-decoration: none;
+    background: none;
+}
+
+.notenumber a:hover {
+   color: #03ff00;
+   background-color: #ff17cf;
+}
+
+.images {
+    display: none;
+    max-width: 200px;
+    max-height: 100%;
+    padding-bottom: 7px;
+
+}
+
+@media only screen and (max-width:960px){
+
+  #menuelement {
+    text-align: center;
+  }
+
+  #menuelement a {
+    display: block;
+  }
+
+  body {
+    margin-top: 200px;
+  }
+
+} 
+
+
+@media only print {
+
+@page { 
+  margin:20px;
+  margin-bottom: 30px;
+  background-image: url("img/back.jpg");
+  background-repeat: repeat-y;
+}
+
+#header {
+  margin-top: 0px; }
+
+a {
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/*TYPOGRAPHY*/
+
+#title0 { 
+  color: black;
+  background-color: white;
+  padding: 10px;
+  margin-left: 2%;
+  line-height: 4.7em;
+}
+
+body {
+  background-color: white; }
+h1 {
+  font-size: 75px;
+  line-height: 0.95em;
+  /*color: white*/  }
+h2 {
+  color: white; }
+h3 {
+  color: white; }
+
+p {
+  font-size: 16px;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;  
+}
+
+
+
+#chapter2 p span { 
+   background-color: white;
+   color: black;
+}
+
+#shift{
+  display: none;
+}
+
+
+.floating-box {
+  border: none;
+  left: 30px;
+  width: 60%;
+}
+
+/*FOOTNOTES*/
+
+/*REFERENCES DIV*/
+.textnotes {
+    background-color: white;
+    border: none;
+    font-size: 0.8em;
+    line-height: 1.2em; 
+    width: 19%;
+    position: absolute;
+    float: left;
+    margin-left: 1%; 
+    padding-top: -10px;
+    z-index: 1;
+    margin-top: -17px;
+}
+
+img {
+    max-width: 250px;
+    max-height: 100%;
+    margin-bottom: 10px;
+    border-style: none;
+}
+
+
+.images {
+    overflow: hidden;
+    font-size: 0.7em;
+    width: 26%;
+    float: left;
+    margin-top: 22px;
+    margin-left: 10.2%;
+    margin-right: -100%;
+    z-index: -2;
+
+}
+
+}

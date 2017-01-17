@@ -1,0 +1,654 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+html, body { height: 100% }
+
+body {
+  background-color: #e4e4e4; 
+/*  background-image: url("img/background6.jpg");
+*/  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+/*SCROLLBAR & SELECTION*/
+
+::selection {
+  background: #03ff00; 
+}
+::-moz-selection {
+  background: #03ff00; 
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 100px rgba(194,0,255,1); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 100px rgba(255,255,255,1);
+}
+  
+/*TYPOGRAPHY*/
+
+h4 {
+  /*HEADER*/
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0.005em;
+  line-height: 1em;
+  font-size: 2.6em;
+  color: red;
+}
+
+h5 {
+  /*SUBTITLE*/
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  line-height: 0.4em;
+  font-size: 110%;
+  color: black;
+  margin-top: 1%;
+}
+
+h1 {
+  /*MANIFEST*/
+  font-weight: normal;
+  letter-spacing: 0.005em;
+  line-height: 0.94em;
+  font-size: 350%;
+}
+
+h3 {
+  /*MANIFEST HIGHLIGHT*/
+  font-weight: normal;
+  letter-spacing: 0.005em;
+  line-height: 0.94em;
+  font-size: 3.6em;
+}
+
+h2 {
+  /*SHIFT ON RIGHT SIDE OF PAGE*/
+  font-weight: normal;
+  color: white;
+  margin-left: 20px; 
+  margin-right: 7px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+#continue {
+  font-style: italic;
+  display: inline-block;
+  letter-spacing: 0.005em;
+  line-height: 1em;
+  font-size: 1.5em;
+  background-color: white;
+
+}
+
+#abstract {
+  /*ABSTRACT*/
+  font-style: italic;
+  display: inline-block;
+  letter-spacing: 0.005em;
+  line-height: 1em;
+  font-size: 1.4em;
+  color: red;
+  background-color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: red;   
+}
+
+a:visited { 
+  text-decoration: none;
+  color: red; 
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+}
+
+
+.showme{ 
+    display: none;
+    }
+    .show:hover .showme{
+    display : block;    
+
+    }
+
+
+/*CONTENT*/
+
+
+#title1 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color:  #ffcc28;
+}
+
+#title1:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref1 {
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #ffcc28;
+}
+#text1 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title2 {
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color:  #ffcc28;
+}
+
+#title2:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref2 {
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #ffcc28;
+}
+#text2 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title3 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+
+#title3:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+
+#ref3 {
+  height: 115px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: white;
+}
+#text3 {
+  color: white;
+  background-color: blue;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title4 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+
+#title4:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+
+#ref4 {
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #ffcc28;
+}
+#text4 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title5 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+#title5:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref5 {
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #ffcc28;
+}
+#text5 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title6 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+
+#title6:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref6 {
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #06ff01;
+}
+#text6 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title7 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+
+#title7:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref7 {
+  height: 115px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: white;
+}
+#text7 {
+  color: white;
+  background-color: blue;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title8 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+
+#title8:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref8 {
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #06ff01;
+}
+#text8 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title9 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+
+#title9:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref9 {
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #06ff01;
+}
+#text9 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+#title10 { /*MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;
+  background-color: #ffcc28;
+}
+
+#title10:hover {
+  color: #03ff00;
+  background-color: #ff17cf;
+  cursor: default;
+}
+#ref10 {
+  height: 63px;
+  width: 150px;
+  position: absolute;
+  left: 1.8%;
+  top: 8%;
+  padding: 19px;
+  word-wrap: break-word;
+  background-color: #ffcc28;
+
+}
+#text10 {
+  color: white;
+  background-color: black;
+  letter-spacing: 0.005em;
+  font-size: 120%;
+}
+
+
+
+
+
+#header { /*HEADER*/
+  margin-bottom: 25px;
+  color:  #9c0094;
+  position: relative;
+  display: inline-block;    
+  text-align: center;
+}
+
+#mid-bottom { /*LINK IN MANIFEST*/
+  color:  #9c0094;
+  position: relative;
+  margin-top: 2%;
+  text-align: center;
+  display: inline-block;
+}
+
+#top { /*MOVEMENT*/
+  top: 0%;
+  width: 100%;
+}
+
+.fulljustify1 {
+  text-align: justify;
+  position: relative;  
+  width: 94.3%;
+  height: 23px;
+  color: white;
+  background-color: blue;
+  font-style: italic;
+  letter-spacing: -0.002em;  
+  font-size: 1.1em; 
+  padding-right: 10px; 
+  padding-left: 0.7%;
+
+}
+.fulljustify1:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.fulljustify2 {
+  text-align: justify;
+  position: relative;  
+  width: 75%;
+  height: 20px;
+  color: white;
+  background-color: blue;
+  font-style: italic;
+  letter-spacing: -0.002em;  
+  font-size: 1.1em; 
+  line-height: 1em;
+  padding-right: 10px; 
+  padding-left: 20%;
+  display: inline-block;
+
+}
+.fulljustify2:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+#movement { /*MOVEMENT*/
+}
+
+#bottom { /*CHAPTER*/
+  position: fixed;
+  bottom: 0%;
+  text-align: center;
+  width: 100%;
+  background-color: blue;
+}
+
+#chapter { /*CHAPTER*/
+  color: white;
+  background-color:  blue;
+  letter-spacing: -0.002em;  
+  font-size: 120%;  
+  font-style: 100;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+#shift {
+  text-transform: uppercase;
+  background-color: #c200ff;
+  position: fixed;
+  display: inline-block;
+  overflow:hidden;
+  right: -1%;
+  bottom: 0;
+  line-height: 80px;
+  font-size: 213%;
+  transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+  width: 100vh;
+  height: 9%;
+  -webkit-transform: rotate(90deg) translateY(80px);
+  -moz-transform: rotate(90deg) translateY(80px);
+  -o-transform: rotate(90deg) translateY(80px);
+  -ms-transform: rotate(90deg) translateY(80px);
+  transform: rotate(90deg) translateY(80px);
+  z-index: 100;
+}
+
+#shift:after {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+
+/*ARTICLE*/
+
+#art-1 {
+  background-repeat: repeat-y;
+  background-size: 100%;
+  text-align: center;
+}
+
+
+.floating-box {
+  display: inline;
+  float: left;
+  position: relative;
+  width: 45%;
+  margin-left: 32%;
+/*  border-top: solid  1px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;*/
+}
+
+article {
+    page-break-before: always;
+
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+
+/*@media*/
+
+@media screen and (min-width: 480px) {
+  nav {
+      width: 200px;
+      float: left;     /* This makes it float to the left of the main content */
+      margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+   
+.floating-box {
+  top: 5%;
+  width: 90%;
+  margin-left: 1%;
+  margin-right: 3%;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 18px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+p {
+  font-size: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#shift {  
+  right: -14%;
+  height: 7%;
+  line-height: 46px;
+}
+
+.textnotes {
+    display: none;
+    background-color: white;
+    border: none;
+    font-size: 0.6em;
+    line-height: 1.2em; 
+    width: 19%;
+    position: absolute;
+    float: left;
+    margin-left: 2%; 
+    padding-top: -10px;
+    z-index: 1;
+}
+
+img {
+    max-width: 100;
+    max-height: 100;
+}
+
+#menu { 
+  display: none;
+}
+
+}
